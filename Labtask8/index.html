@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+    <script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+    } 
+    
+
+ 
+</script> 
+  </head>
+<body>
+
+
+<form name="myform" method="post" action="" onsubmit="return validateform()" > 
+  <fieldset>
+  <legend><b>REGISTRATION</b></legend>
+
+  <label for="name" >Name</label>
+  <input type="text" name="name">
+  <hr>
+
+  <label for="email" >Email</label>
+  <input type="text" name="mail"><br>
+  <hr>
+
+  <label for="id" >User Name</label>
+  <input type="text" name="id"><br>
+  <hr>
+
+  <label for="pass" >Password</label>
+  <input type="password" name="password">
+  <hr>
+
+  <label for="cpass" >Confirm Password</label>
+  <input type="password" name="cpass"><br>
+  <hr>
+
+  <fieldset style="width: 700px; ">
+  <legend><b>GENDER</b></legend>
+  <input  type="radio" name="gender">Male
+
+  <input type="radio" name="gender">Female  
+
+  <input type="radio" name="gender">Other 
+  <br>  
+  
+  </fieldset>
+
+  <fieldset style="width: 700px; ">
+  <legend>Date of Birth</legend>
+  <table>
+
+  <tr>
+    <td><input type="text" name="dd"></td>
+    <td>/</td>
+    <td><input type="text" name="mm"></td>
+    <td>/</td>
+    <td><input type="text" name="yyyy"></td>
+
+    <label for="dd" >dd/</label></th>
+   <label for="mm" >mm/</label></th>
+    <label for="yyyy">yyyy</label></th>
+
+    </td>
+  </tr>
+
+  </table>
+  </fieldset>
+  <hr>
+
+  <center><input type="submit" name="submit" value="Submit" style="width: 60px">
+  <input type="reset" name="reset" value="Reset">
+
+
+  </form>
+</fieldset>
+</form>
+</body>
+</html>
